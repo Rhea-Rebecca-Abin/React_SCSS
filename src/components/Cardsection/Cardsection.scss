@@ -1,0 +1,43 @@
+// Optional SCSS variables
+$container-max-width: 1200px;
+$section-padding: 50px 20px;
+$bg-white: #fff;
+$text-gray: #555;
+$subheading-color: #666;
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cards-section {
+  text-align: center;
+  padding: $section-padding;
+  background-color: $bg-white;
+
+  .cards-heading {
+    font-size: 2rem;
+    font-weight: bold;
+
+    .subheading {
+      font-weight: normal;
+      color: $subheading-color;
+      font-size: 1.2rem;
+    }
+  }
+
+  .cards-description {
+    max-width: 900px;
+    margin: 10px auto 40px;
+    color: $text-gray;
+    font-size: 0.95rem;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+  }
+}

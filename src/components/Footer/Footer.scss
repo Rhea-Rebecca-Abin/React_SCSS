@@ -1,0 +1,27 @@
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  font-size: 14px;
+  color: gray;
+
+  .footer-links {
+    a {
+      text-decoration: none;
+      color: #2c6eb7;
+      margin: 0 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-copy {
+    margin-top: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
